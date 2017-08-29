@@ -55,11 +55,12 @@ li.btn-login {
 	font-weight: bold;
 	color: #ffffff;
 	text-decoration: none;
+	cursor: default;
 }
 
 .content {	
 	width: 600px;
-	margin: 75px auto auto;
+	margin: 150px auto auto;
 }
 
 .logo-google {
@@ -69,24 +70,24 @@ li.btn-login {
 }
 
 .logo-google img {
-	width: 350px;
+	width: 270px;
 }
 
 .country {
 	color: #4583ec;
 	font-size: 16px;
-	font-weight: bold;
 	position: absolute;
-	right: 130px;
-	bottom: 10px;
+	right: 165px;
+	bottom: 0px;
 }
 
 .search-box {
-	margin-top: 50px;
+	margin-top: 30px;
 	text-align: center;
+	position: relative;
 }
 
-.search-box a {
+a.btn-search {
 	display: inline-block;
 	font-weight: bold;
 	color: rgba(0,0,0,0.6);
@@ -96,13 +97,77 @@ li.btn-login {
 	text-decoration: none;
 }
 
+a:hover.btn-search {
+	outline: 1px solid #e0e0e0;
+	color: #000;
+}
+
 #search-form {
 	box-sizing: border-box;
 	display: block;
 	width: 100%;
 	padding: 15px 100px 15px 15px;
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.15);
 	border: 1px solid rgba(0,0,0,0.15);
+}
+
+#search-form:hover {
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+#search-form:focus, #search-form:active {
+	outline: 0;
+}
+
+.keyboard {
+	position: absolute;
+	width: 19px;
+	height: 11px;
+	display: block;
+	background: url("../images/keyboard.png") no-repeat;
+	top: 18px;
+	right: 60px;
+}
+
+.keyboard:hover {
+	background-position: -21px 0px;
+}
+
+.microphone {
+	position: absolute;
+	width: 14px;
+	height: 20px;
+	display: block;
+	background: url("../images/microphone.png") no-repeat;
+	top: 15px;
+	right: 20px;
+}
+
+span.tooltip {
+	display: none;
+	padding: 7px 5px;
+	background: #000;
+	border: 1px solid #fff;
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.15);
+	text-decoration: none;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	white-space: nowrap;
+	position: absolute;
+	cursor: default;
+}
+
+.keyboard:hover span {
+	display: block;
+	top: 32px;
+	right: -55px;
+}
+
+.microphone:hover span {
+	display: block;
+	top: 35px;
+	right: -45px;
 }
 
 .footer {
