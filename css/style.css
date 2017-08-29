@@ -16,6 +16,10 @@
 	clear: both;
 }
 
+.line {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
 .nav {
 	float: right;
 }
@@ -208,11 +212,28 @@ span.tooltip {
 	clear: both;
 }
 
+.footer-center {
+	width: 800px;
+	margin-left: 150px;
+}
+
+.footer-center span {
+	color: #B6B6B6;
+}
+
 .footer a {
 	display: inline-block;
 	color: #434343;
 	text-decoration: none;
 	padding: 12px 15px;
+}
+
+a.footer-top-link {
+	padding: 20px 0px 5px 0px;
+}
+
+a.footer-bottom-link {
+	padding: 12px 15px 12px 0px;
 }
 
 .footer a:hover {
