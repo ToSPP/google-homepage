@@ -111,8 +111,8 @@ a:hover.btn-search {
 	border: 1px solid rgba(0,0,0,0.15);
 }
 
-#search-form:hover {
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+.search-dom:hover {
+	box-shadow: 0px 4px 5px rgba(0,0,0,0.05);
 }
 
 #search-form:focus, #search-form:active {
@@ -121,34 +121,31 @@ a:hover.btn-search {
 
 .keyboard {
 	position: absolute;
-	width: 19px;
-	height: 11px;
+	width: 40px;
+	height: 35px;
 	display: block;
-	background: url("../images/keyboard.png") no-repeat;
-	top: 18px;
-	right: 60px;
-}
-
-.keyboard:hover {
-	background-position: -21px 0px;
+	background: url("../images/keyboard.png") no-repeat 50% 50%;
+	top: 5px;
+	right: 55px;
+	opacity: .50;
 }
 
 .microphone {
 	position: absolute;
-	width: 14px;
-	height: 20px;
+	width: 40px;
+	height: 35px;
 	display: block;
-	background: url("../images/microphone.png") no-repeat;
-	top: 15px;
-	right: 20px;
+	background: url("../images/microphone.png") no-repeat 50% 50%;
+	top: 5px;
+	right: 15px;
 }
 
 span.tooltip {
 	display: none;
-	padding: 7px 5px;
+	padding: 7px 7px;
 	background: #000;
 	border: 1px solid #fff;
-	box-shadow: 0px 0px 7px rgba(0,0,0,0.15);
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
 	text-decoration: none;
 	color: #fff;
 	font-size: 11px;
@@ -158,16 +155,43 @@ span.tooltip {
 	cursor: default;
 }
 
+.romb {
+	width: 8px;
+	height: 8px;
+	background: #000;
+	transform: rotate(45deg);
+	display: none;
+	position: absolute;
+} 
+
+.keyboard:hover {
+	opacity: .85;
+}
+
 .keyboard:hover span {
 	display: block;
-	top: 32px;
-	right: -55px;
+	top: 46px;
+	right: -47px;
 }
 
 .microphone:hover span {
 	display: block;
-	top: 35px;
-	right: -45px;
+	top: 46px;
+	right: -33px;
+	opacity: .85;
+}
+
+.keyboard:hover div {
+	display: block;
+	top: 43px;
+	right: 15px;
+}
+
+.microphone:hover div {
+	display: block;
+	top: 43px;
+	right: 17px;
+	opacity: .85;
 }
 
 .footer {
