@@ -123,6 +123,11 @@ li.btn-login {
 	margin-left: 165px;
 }
 
+.search-google {
+	width: 600px;
+	margin: 130px auto;
+}
+
 .search-result {
 	color: #5C5C5C;
 	padding-top: 10px;
@@ -253,7 +258,7 @@ a:hover.btn-search {
 	font-size: 16px;
 }
 
-.search-dom:hover {
+.search-dom:hover, .search-dom:focus {
 	box-shadow: 0px 4px 5px rgba(0,0,0,0.05);
 }
 
@@ -363,6 +368,11 @@ span.tooltip {
 	content: "";
 	display: block;
 	clear: both;
+}
+
+.main-f {
+	position: fixed;
+	bottom: 0;
 }
 
 .footer-center {
